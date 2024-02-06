@@ -13,7 +13,7 @@ public class ColorImage {
     private int height;
     private int depth;
     private int[][][] pixels;
-    private int [][][] reducedpixels;
+    private int [][][]  reducedpixels;
 
     public ColorImage(String filename) {
     try {
@@ -87,7 +87,7 @@ public class ColorImage {
          }
    }
    public int [] getReducedPixel(int i, int j){
-        // On doit s'assurer que les pixels de depart ne sont pas nuls et verifier que les indices sont bien valides
+        // s'assurer que les pixels de depart ne sont pas nuls et verifier que les indices sont bien valides
         if (reducedpixels == null) {
             throw new IllegalArgumentException(" The pixel that you're trying to access is null");
         }
