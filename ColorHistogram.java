@@ -10,7 +10,7 @@ public class ColorHistogram {
     private ColorImage colorImage;
     private int NumberOfPixel;
     double[] histogramArray;
-    // constructeur pour créer un histogramme à partir de d bits
+    //constructeur pour créer un histogramme à partir de d bits
     public ColorHistogram(int d) {
         this.d = d;
     }
