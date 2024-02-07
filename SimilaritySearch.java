@@ -46,7 +46,7 @@ public class SimilaritySearch {
                 if (imageFile.isFile() && imageFile.getName().endsWith(".txt")) {
                     String imageFileName = imageFile.getName();
                     ColorHistogram datasetHistogram = new ColorHistogram(imageDirectory + File.separator + imageFileName);
-                    datasetHistogram.Hist_Normaliser(); // Normalisation de l'histogramme
+                    datasetHistogram.Hist_Normaliser();  // Normalisation de l'histogramme
                     double score = histogrammeRequete.compare(datasetHistogram);
                     scoresSimilarité.put(imageFileName, score);
                 }
