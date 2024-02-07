@@ -60,7 +60,7 @@ public class SimilaritySearch {
         List<Map.Entry<String, Double>> sortedList = new ArrayList<>(scoresSimilarité.entrySet());
         sortedList.sort(Map.Entry.comparingByValue(Comparator.reverseOrder()));
 
-        // Affichage des noms des 5 images les plus similaires
+        //  Affichage des noms des 5 images les plus similaires
         System.out.println("Author: Mor Fall Sylla\n" + "Student number: 300218857");
         System.out.println("Les 5 images les plus similaires à " + queryFileName + " sont :");
         for (Map.Entry<String, Double> imageName : sortedList.subList(0, Math.min(5, sortedList.size()))) {
